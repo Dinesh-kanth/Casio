@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="171352_calculator_icon.png">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="travel1">
+            <p class="l1">%</p>
+            <p class="l1"><img src="pi-mathematical-constant-symbol.png" alt="pi" style="height: 3em; width: 3em;"></p>
+            <p class="l2">3</p>
+            <p class="l3">-</p>
+        </div>
+        <div class="travel2">
+            <p class="l1">7</p>
+            <p class="l2">+</p>
+            <p class="l3">2</p>
+        </div>
+        <div class="travel3">
+            <p class="l1">4</p>
+            <p class="l2">/</p>
+            <p class="l3">1</p>
+        </div>
+        <div class="travel4">
+            <p class="l1">5</p>
+            <p class="l1"><img src="pi-mathematical-constant-symbol.png" alt="pi" style="height: 3em; width: 3em;"></p>
+            <p class="l2">x</p>
+            <p class="l3">9</p>
+        </div>
+        <div class="travel5">
+            <p class="l1">.</p>
+            <p class="l2">8</p>
+            <p class="l3">3</p>
+        </div>
+        <div class="travel1">
+            <p class="l1">+</p>
+            <p class="l2">%</p>
+            <p class="l3">6</p>
+        </div>
+        <div class="travel2">
+            <p class="l1">=</p>
+            <p class="l2">x</p>
+            <p class="l3">0</p>
+        </div>
+        <div class="travel3">
+            <p class="l1"><img src="pi-mathematical-constant-symbol.png" alt="pi" style="height: 3em; width: 3em;"></p>
+            <p class="l2">0</p>
+            <p class="l3">.</p>
+        </div>
+        <div class="travel4">
+            <p class="l1">1</p>
+            <p class="l2">%</p>
+            <p class="l3">4</p>
+        </div>
+        <div class="travel5">
+            <p class="l1">2</p>
+            <p class="l2">-</p>
+            <p class="l3">6</p>
+        </div>
+        <div class="travel1">
+            <p class="l1">%</p>
+            <p class="l1"><img src="pi-mathematical-constant-symbol.png" alt="pi" style="height: 3em; width: 3em;"></p>
+            <p class="l2">3</p>
+            <p class="l3">-</p>
+        </div>
+        <div class="travel2">
+            <p class="l1">7</p>
+            <p class="l2">+</p>
+            <p class="l3">2</p>
+        </div>
+        <div class="travel3">
+            <p class="l1">4</p>
+            <p class="l2">/</p>
+            <p class="l3">1</p>
+        </div>
+        <div class="travel4">
+            <p class="l1">5</p>
+            <p class="l1"><img src="pi-mathematical-constant-symbol.png" alt="pi" style="height: 3em; width: 3em;"></p>
+            <p class="l2">x</p>
+            <p class="l3">9</p>
+        </div>
+        <div class="travel5">
+            <p class="l1">.</p>
+            <p class="l2">8</p>
+            <p class="l3">3</p>
+        </div>
+        <div class="travel1">
+            <p class="l1">+</p>
+            <p class="l2">%</p>
+            <p class="l3">6</p>
+        </div>
+        <div class="travel2">
+            <p class="l1">=</p>
+            <p class="l2">x</p>
+            <p class="l3">0</p>
+        </div>
+        <div class="travel3">
+            <p class="l1"><img src="pi-mathematical-constant-symbol.png" alt="pi" style="height: 3em; width: 3em;"></p>
+            <p class="l2">0</p>
+            <p class="l3">.</p>
+        </div>
+        <div class="travel4">
+            <p class="l1">1</p>
+            <p class="l2">%</p>
+            <p class="l3">4</p>
+        </div>
+        <div class="travel5">
+            <p class="l1">2</p>
+            <p class="l2">-</p>
+            <p class="l3">6</p>
+        </div>
+        <div class="container" id="change">
+            <div class="title"><h1>Casio<div class="tip">
+                <img src="209-2090000_information-icon-white-png-clipart-removebg-preview.png" alt="info" style="height: 0.8em; width: 1em; margin-left: 220px;">
+                <span class="tiptext">Note: Use degree before using sin/cos/tan</span>
+            </div></h1></div>
+            <div class="input"><input type="text" id="display"></div>
+            <div class="col">
+                <button onclick="appendtodisplay('3.14159265359')" style="background-color: orange;">PI</button>
+                <button onclick="sin()" style="background-color: orange;">sin</button>
+                <button onclick="cos()" style="background-color: orange;">cos</button>
+                <button onclick="tan()" style="background-color: orange;">tan</button>
+            </div>
+            <div class="col">
+                <button onclick="cleardisplay()" style="background-color: red;">AC</button>
+                <button onclick="backspace()" style="background-color: red;">DEL</button>
+                <button onclick="appendtodisplay('%')" style="background-color: orange;">%</button>
+                <button onclick="appendtodisplay('/')" style="background-color: orange;">/</button>
+            </div>
+            <div class="col">
+                <button onclick="appendtodisplay('7')">7</button>
+                <button onclick="appendtodisplay('8')">8</button>
+                <button onclick="appendtodisplay('9')">9</button>
+                <button onclick="appendtodisplay('*')" style="background-color: orange;">x</button>
+            </div>
+            <div class="col">
+                <button onclick="appendtodisplay('4')">4</button>
+                <button onclick="appendtodisplay('5')">5</button>
+                <button onclick="appendtodisplay('6')">6</button>
+                <button onclick="appendtodisplay('-')" style="background-color: orange;">-</button>
+            </div>
+            <div class="col">
+                <button onclick="appendtodisplay('1')">1</button>
+                <button onclick="appendtodisplay('2')">2</button>
+                <button onclick="appendtodisplay('3')">3</button>
+                <button onclick="appendtodisplay('+')" style="background-color: orange;">+</button>
+            </div>
+            <div class="col">
+                <button onclick="appendtodisplay('0')">0</button>
+                <button onclick="appendtodisplay('00')">00</button>
+                <button onclick="appendtodisplay('.')">.</button>
+                <button onclick="calculate()" style="background-color: orange;">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
